@@ -92,8 +92,9 @@ html {
 
 .hover-word {
       position: relative;
-      color: blue;
+      color: #0055cc;
       cursor: pointer;
+      border-bottom: 1px dotted #0055cc;
     }
 
     .hover-word img {
@@ -113,8 +114,9 @@ html {
 
 .hover-word-2 {
       position: relative;
-      color: blue;
+      color: #0055cc;
       cursor: pointer;
+      border-bottom: 1px dotted #0055cc;
     }
 
     .hover-word-2 img {
@@ -130,3 +132,81 @@ html {
     .hover-word-2:hover img {
       display: block;
     }
+
+    .custom-list li {
+    margin-bottom: 1em; /* регулируйте по вкусу */
+  }
+  
+  .hint-wrapper {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    color: #0055cc;
+    border-bottom: 1px dotted #0055cc;
+  }
+
+  .hint-wrapper:focus {
+    outline: none;
+  }
+
+  .hint-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    margin-top: 0.4em;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 0.6em 0.9em;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.12);
+    font-size: 0.9em;
+    line-height: 1.4;
+    white-space: nowrap;
+    z-index: 999;
+    color: #333;
+  }
+
+  .hint-wrapper:hover .hint-content,
+  .hint-wrapper:focus .hint-content {
+    display: block;
+  }
+
+
+.gallery-title {
+  font-size: 1rem;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.caption {
+  font-size: 0.7rem;
+  color: #666;
+  line-height: 1.4;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.caption a {
+  color: #666;
+  text-decoration: underline;
+}
+
+.caption a:hover {
+  color: #333;
+}
