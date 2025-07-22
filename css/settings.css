@@ -211,15 +211,18 @@ html {
   color: #333;
 }
 .marquee-container {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   overflow: hidden;
   background-color: #111;
   color: #fff;
   font-family: sans-serif;
-  font-size: 1rem;
+  font-size: 0.9rem;
   white-space: nowrap;
-  border-top: 2px solid #444;
   border-bottom: 2px solid #444;
+  z-index: 9999;
 }
 
 .marquee {
